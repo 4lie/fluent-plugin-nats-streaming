@@ -1,10 +1,10 @@
-fluent-plugin-nats-streaming
-============================
+# Fluent Plugin NATS Streaming
 
-nats streaming plugin for [fluentd](https://github.com/fluent/fluentd) Event Collector
+NATS Streaming plugin for [fluentd](https://github.com/fluent/fluentd) Event Collector.
 
-# Getting Started
-example for nats streaming input:
+## Getting Started
+
+Example for NATS Streaming input:
 
 ~~~~
   <system>
@@ -26,7 +26,7 @@ example for nats streaming input:
   </match>
 ~~~~
 
-example for nats streaming output:
+Example for NATS Streaming output:
 
 ~~~~
   <system>
@@ -45,18 +45,19 @@ example for nats streaming output:
   </match>
 ~~~~
 
-# Configuration
-* **server** (string) (optional): NATS streaming server host:port
+## Configuration
+
+* **server** (string) (optional): NATS Streaming server host:port
   * Default value: `localhost:4222`
-* **cluster_id** (string) (optional): cluster id 
+* **cluster_id** (string) (optional): Cluster id 
   * Default value: `fluentd`
-* **client_id** (string) (optional): client id 
+* **client_id** (string) (optional): Client id 
   * Default value: `fluentd`
-* **durable_name** (string) (optional): durable name
+* **durable_name** (string) (optional): Durable name
   * Default value: `fluentd`
-* **queue** (string) (optional): queue name
+* **queue** (string) (optional): Queue name
   * Default value: `fluentd`
-* **channel** (string) : channel name
+* **channel** (string) : Channel name
   * Default value: nil
 * **max_reconnect_attempts** (integer) : The max number of reconnect tries
   * Default value: 10
@@ -64,15 +65,3 @@ example for nats streaming output:
   * Default value: 5
 * **timeout** (integer) : Ack timeout when publish
   * Default value: 5
-
-
-
-
-
-
-
-
-
-
-
-
